@@ -1,0 +1,6 @@
+interface:
+  display_name: "LayerTrace — Precision Image-to-Vector Skill"
+  short_description: "将参考图片精确拆解为可编辑的分层矢量图，支持 1:1 轮廓复刻与 SVG 导出。"
+  default_prompt: "使用 $layertrace 按原图重建清晰轮廓、可改线宽的开放贝塞尔描边与独立填色，逐部件对照原图检查至少 400% 放大图，修复断裂、锯齿和碎线，最终导出启用 --require-line-quality-review，通过当前文件的逐对象审核后再交付彩色/线稿 SVG；本机有 Illustrator 时保存并回读真实 AI，分别报告编辑验证和视觉差异。"
+policy:
+  allow_implicit_invocation: true

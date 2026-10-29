@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-29",
+  "scope": "Two synthetic ellipse images; integration smoke test, not clinical or general illustration accuracy evaluation",
+  "checkpoint_name": "sam2.1_hiera_base_plus.pt",
+  "checkpoint_sha256": "a2345aede8715ab1d5d31b4a509fb160c5a4af1970f199d9054ccfb746c004c5",
+  "official_sam2_commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+  "torch": "2.7.1",
+  "torchvision": "0.22.1",
+  "cases": [
+    {
+      "case": "one",
+      "device": "mps",
+      "actual_sam2_inference": true,
+      "model_predicted_iou": 0.990105,
+      "mask_iou_against_synthetic_ground_truth": 0.998022,
+      "rgb_mae_0_255": 0.209,
+      "seconds": 6.992,
+      "quality_gates_passed": true
+    },
+    {
+      "case": "two",
+      "device": "mps",
+      "actual_sam2_inference": true,
+      "model_predicted_iou": 0.991644,
+      "mask_iou_against_synthetic_ground_truth": 0.999537,
+      "rgb_mae_0_255": 0.1603,
+      "seconds": 5.348,
+      "quality_gates_passed": true
+    }
+  ],
+  "studio_preview": {
+    "actual_sam2_inference": true,
+    "device": "mps",
+    "candidate_count": 3,
+    "highest_model_predicted_iou": 0.9915237426757812,
+    "input_mask_unchanged_before_acceptance": true
+  }
+}

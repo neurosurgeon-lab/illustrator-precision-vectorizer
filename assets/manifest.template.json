@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "source_image": "source.png",
+  "canvas": {"width": 800, "height": 600},
+  "layers": [
+    {
+      "id": "01_body_fill",
+      "name_zh": "人体填色",
+      "name_en": "Body Fill",
+      "objects": [
+        {
+          "id": "body_base",
+          "name_zh": "人体基础色块",
+          "name_en": "Body Base",
+          "geometry": {"type": "mask_png", "file": "masks/body_base.png"},
+          "fill": "#FDEEE7",
+          "stroke": "none",
+          "opacity": 1
+        }
+      ]
+    },
+    {
+      "id": "02_body_outline",
+      "name_zh": "人体轮廓",
+      "name_en": "Body Outline",
+      "objects": [
+        {
+          "id": "shoulder_curve",
+          "name_zh": "肩部轮廓",
+          "name_en": "Shoulder Curve",
+          "geometry": {"type": "svg_path", "d": "M 100,300 C 180,280 240,320 300,300"},
+          "bbox": [100, 280, 200, 40],
+          "fill": "none",
+          "stroke": "#A4A8B0",
+          "stroke_width": 2,
+          "stroke_linecap": "round",
+          "opacity": 1
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {"id": "m_body", "name_zh": "人体主体", "layer_ids": ["01_body_fill", "02_body_outline"]}
+  ],
+  "qa": {"require_line_quality_review": true, "editable_stroke_object_ids": ["shoulder_curve"], "unresolved_details": ["示例路径仅为占位；必须先描摹实际参考图"], "illustrator_native_verified": false}
+}

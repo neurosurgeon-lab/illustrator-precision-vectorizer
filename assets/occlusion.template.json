@@ -1,0 +1,13 @@
+{
+  "occlusion": {
+    "constraints": [
+      {"behind": "nerve_segment", "front": "electrode_01", "source": "user_confirmed"},
+      {"behind": "cable_01", "front": "device_case", "source": "user_confirmed"}
+    ],
+    "exclude_from_inference": ["background"]
+  },
+  "qa": {
+    "require_resolved_occlusions": true,
+    "unresolved_details": ["须核对原图前后关系；不可擅自生成不可见神经段。"]
+  }
+}

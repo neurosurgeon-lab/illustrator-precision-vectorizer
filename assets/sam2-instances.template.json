@@ -1,0 +1,44 @@
+{
+  "instances": [
+    {
+      "id": "vagus_nerve_visible",
+      "name_zh": "可见迷走神经示意线",
+      "name_en": "Visible vagus nerve illustration",
+      "layer_id": "02_nerve",
+      "profile": "nerve",
+      "bbox": [120, 75, 180, 220],
+      "fg_points": [[160, 125], [164, 198]],
+      "bg_points": [[140, 100], [200, 188]],
+      "max_area_fraction": 0.20,
+      "allow_disconnected": false,
+      "color_refine": false
+    },
+    {
+      "id": "electrode_contact_01",
+      "name_zh": "电极接触点一",
+      "name_en": "Electrode contact 01",
+      "layer_id": "03_electrodes",
+      "profile": "electrode",
+      "bbox": [250, 140, 34, 35],
+      "fg_points": [[268, 157]],
+      "bg_points": [[252, 142]],
+      "max_area_fraction": 0.05
+    },
+    {
+      "id": "lead_wire_01",
+      "name_zh": "独立导线一",
+      "name_en": "Lead wire 01",
+      "layer_id": "04_leads",
+      "profile": "lead",
+      "bbox": [210, 180, 180, 90],
+      "fg_points": [[252, 215]],
+      "bg_points": [[216, 188]],
+      "color_refine": true,
+      "refine_radius_px": 2,
+      "refine_lab_tolerance": 12,
+      "max_added_fraction": 0.12,
+      "max_area_fraction": 0.15
+    }
+  ],
+  "allow_visible_overlap": false
+}

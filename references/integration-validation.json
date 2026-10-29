@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-29",
+  "test_suites": [
+    {
+      "suite": "validate_skill",
+      "exit_code": 0,
+      "seconds": 0.1
+    },
+    {
+      "suite": "self_test",
+      "exit_code": 0,
+      "seconds": 1.16
+    },
+    {
+      "suite": "regression_tests",
+      "exit_code": 0,
+      "seconds": 6.33
+    },
+    {
+      "suite": "instance_centerline_tests",
+      "exit_code": 0,
+      "seconds": 1.24
+    },
+    {
+      "suite": "sam2_integration_tests",
+      "exit_code": 0,
+      "seconds": 3.44
+    },
+    {
+      "suite": "precision_v23_tests",
+      "exit_code": 0,
+      "seconds": 1.97
+    },
+    {
+      "suite": "occlusion_v24_tests",
+      "exit_code": 0,
+      "seconds": 5.03
+    },
+    {
+      "suite": "interactive_v25_tests",
+      "exit_code": 0,
+      "seconds": 1.87
+    },
+    {
+      "suite": "studio_v30_tests",
+      "exit_code": 0,
+      "seconds": 2.21
+    },
+    {
+      "suite": "batch_tests",
+      "exit_code": 0,
+      "seconds": 2.79
+    },
+    {
+      "suite": "v31_completion_batch_ocr_tests",
+      "exit_code": 0,
+      "seconds": 3.92
+    }
+  ],
+  "real_ocr": {
+    "engine": "Tesseract",
+    "engine_version": "5.5.4",
+    "pytesseract": "0.3.13",
+    "language": "eng",
+    "fixture": "Synthetic Arial text: VNS 120 Hz 2026",
+    "items": [
+      {
+        "text": "VNS",
+        "confidence": 92.0,
+        "approved": false
+      },
+      {
+        "text": "120",
+        "confidence": 96.0,
+        "approved": false
+      },
+      {
+        "text": "Hz",
+        "confidence": 96.0,
+        "approved": false
+      },
+      {
+        "text": "2026",
+        "confidence": 96.0,
+        "approved": false
+      }
+    ],
+    "limits": "Synthetic English smoke test only; confidence is an engine score, not overall accuracy. Chinese language data are optional and not tested."
+  },
+  "batch_ocr": {
+    "status": "draft",
+    "ocr": "review_required",
+    "source_unchanged": true,
+    "candidates_unapproved": true,
+    "quality_failure_expected": "Only background geometry provided; unapproved OCR text is excluded."
+  },
+  "real_sam2_cases": [
+    {
+      "case": "one",
+      "mask_iou_against_synthetic_ground_truth": 0.998022,
+      "rgb_mae_0_255": 0.209,
+      "quality_gates_passed": true,
+      "modal_identical": true
+    },
+    {
+      "case": "two",
+      "mask_iou_against_synthetic_ground_truth": 0.999537,
+      "rgb_mae_0_255": 0.1603,
+      "quality_gates_passed": true,
+      "modal_identical": true
+    }
+  ],
+  "illustrator_native_verified": false,
+  "sam2_environment": {
+    "checkpoint_name": "sam2.1_hiera_base_plus.pt",
+    "checkpoint_sha256": "a2345aede8715ab1d5d31b4a509fb160c5a4af1970f199d9054ccfb746c004c5",
+    "official_sam2_commit": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+    "torch": "2.7.1",
+    "torchvision": "0.22.1"
+  },
+  "limits": "Synthetic integration checks only, not a general medical accuracy benchmark. Chinese OCR and native Illustrator import/save are unverified."
+}

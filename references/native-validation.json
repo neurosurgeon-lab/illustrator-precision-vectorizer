@@ -1,0 +1,152 @@
+{
+  "date": "2026-10-29",
+  "fixture": "Public synthetic editable Bézier body, contact, and open wire; no research artwork",
+  "illustrator_version": "30.1.0",
+  "native_color": {
+    "illustrator_version": "30.1.0",
+    "native_ai_created": true,
+    "ai_file": "Native_Color.ai",
+    "save_and_reopen_verified": true,
+    "stroke_width_edit_test": true,
+    "anchor_edit_test": true,
+    "parts_imported": [
+      "native_v33_0001",
+      "native_v33_0002",
+      "native_v33_0003",
+      "native_v33_0004"
+    ],
+    "structure": {
+      "layers": 4,
+      "paths": 4,
+      "text_frames": 0,
+      "raster_items": 0,
+      "placed_items": 0,
+      "stroked_paths": 3,
+      "open_stroked_paths": 1,
+      "anchors": 15,
+      "layer_names": [
+        "独立导线",
+        "独立接触点",
+        "主体闭合轮廓",
+        "背景"
+      ]
+    },
+    "canvas_points": {
+      "width": 320,
+      "height": 240
+    },
+    "visual_fidelity_requires_review": true
+  },
+  "native_linework": {
+    "illustrator_version": "30.1.0",
+    "native_ai_created": true,
+    "ai_file": "Native_Linework.ai",
+    "save_and_reopen_verified": true,
+    "stroke_width_edit_test": true,
+    "anchor_edit_test": true,
+    "parts_imported": [
+      "native_v33_0001",
+      "native_v33_0002",
+      "native_v33_0003"
+    ],
+    "structure": {
+      "layers": 3,
+      "paths": 3,
+      "text_frames": 0,
+      "raster_items": 0,
+      "placed_items": 0,
+      "stroked_paths": 3,
+      "open_stroked_paths": 1,
+      "anchors": 11,
+      "layer_names": [
+        "独立导线",
+        "独立接触点",
+        "主体闭合轮廓"
+      ]
+    },
+    "canvas_points": {
+      "width": 320,
+      "height": 240
+    },
+    "visual_fidelity_requires_review": true
+  },
+  "portable_directory_execution_verified": true,
+  "legacy_entry_point_execution_verified": true,
+  "approved_text_preserved_in_color_ai": true,
+  "approved_text_excluded_from_linework": true,
+  "quoted_layer_label_preserved": true,
+  "pixel_fidelity": {
+    "mae_rgb_0_255": 0.0,
+    "mae_alpha_0_255": 0.0,
+    "fraction_of_pixels_with_channel_difference_gt15": 0.0,
+    "fraction_of_alpha_pixels_difference_gt15": 0.0,
+    "fraction_of_edges_farther_than_2px": 0.0,
+    "comparison_composited_on": "white",
+    "interpretation": "Diagnostics only: anti-aliasing, PNG/JPEG color management and important tiny geometry can defeat naive threshold judgments."
+  },
+  "limitations": "Synthetic integration check only. Editing structure, appearance, part boundaries and anatomy require separate review; native success is not a pixel-exact fidelity claim.",
+  "python_check_suites": [
+    {
+      "suite": "validate_skill",
+      "exit_code": 0,
+      "seconds": 0.13
+    },
+    {
+      "suite": "self_test",
+      "exit_code": 0,
+      "seconds": 1.2
+    },
+    {
+      "suite": "regression_tests",
+      "exit_code": 0,
+      "seconds": 6.68
+    },
+    {
+      "suite": "instance_centerline_tests",
+      "exit_code": 0,
+      "seconds": 1.16
+    },
+    {
+      "suite": "sam2_integration_tests",
+      "exit_code": 0,
+      "seconds": 3.79
+    },
+    {
+      "suite": "precision_v23_tests",
+      "exit_code": 0,
+      "seconds": 2.1
+    },
+    {
+      "suite": "occlusion_v24_tests",
+      "exit_code": 0,
+      "seconds": 4.73
+    },
+    {
+      "suite": "interactive_v25_tests",
+      "exit_code": 0,
+      "seconds": 1.81
+    },
+    {
+      "suite": "studio_v30_tests",
+      "exit_code": 0,
+      "seconds": 2.46
+    },
+    {
+      "suite": "batch_tests",
+      "exit_code": 0,
+      "seconds": 2.8
+    },
+    {
+      "suite": "v31_completion_batch_ocr_tests",
+      "exit_code": 0,
+      "seconds": 4.28
+    },
+    {
+      "suite": "editable_v33_tests",
+      "exit_code": 0,
+      "seconds": 2.09
+    }
+  ],
+  "skill_validation_passed": true,
+  "frontend_and_jsx_syntax_passed": true
+}

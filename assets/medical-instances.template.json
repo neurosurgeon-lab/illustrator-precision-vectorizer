@@ -1,0 +1,30 @@
+{
+  "instances": [
+    {
+      "id": "vagus_nerve",
+      "name_zh": "颈部迷走神经",
+      "name_en": "Cervical vagus nerve",
+      "layer_id": "02_nerve",
+      "layer_name_zh": "神经结构",
+      "method": "seed_lab",
+      "bbox": [130, 80, 160, 240],
+      "fg_points": [[165, 130], [166, 210]],
+      "bg_points": [],
+      "lab_tolerance": 10,
+      "max_area_fraction": 0.4
+    },
+    {
+      "id": "implant_generator",
+      "name_zh": "植入式神经刺激器",
+      "name_en": "Implantable pulse generator",
+      "layer_id": "04_device",
+      "method": "grabcut",
+      "bbox": [260, 200, 140, 110],
+      "fg_points": [[322, 252]],
+      "bg_points": [[265, 210], [390, 300]],
+      "brush_radius": 3,
+      "lab_tolerance": 28,
+      "iterations": 5
+    }
+  ]
+}

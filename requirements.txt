@@ -1,0 +1,12 @@
+# Local raster/svg reconstruction. Requires compatible native Cairo runtime.
+numpy>=1.26
+Pillow>=10.0
+opencv-python>=4.8
+scikit-image>=0.22
+networkx>=3.0
+cairosvg>=2.7
+lxml>=5.0
+PyYAML>=6.0
+
+# radius profile smoothing and Gaussian utilities
+scipy>=1.11
